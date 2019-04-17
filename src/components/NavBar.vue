@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <div class="navbar-buttons">
-            <button>Home</button>
+            <router-link to="/" tag="button">Home</router-link>
             <button>Company</button>
             <img src="../assets/znieczu-logo.png" width="80" height="80">
             <button>Our Products</button>

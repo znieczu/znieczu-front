@@ -18,10 +18,17 @@
                 <br><br>
                 <div class="description">
                     <p>
-                        Description znieczu project Description znieczu project Description znieczu project Description znieczu project
-                        Description znieczu project Description znieczu project Description znieczu project Description znieczu project
-                        Description znieczu project Description znieczu project Description znieczu project Description znieczu project
-                        Description znieczu project Description znieczu project Description znieczu project Description znieczu project
+                      <b>"Znieczu" </b> is a new Italian start-up, founded by two young guys with the passion on tech
+                      and services. It was born with the idea and concept to help companies to grow up and improve
+                      the relationship between a Company and their employees. Searching for the real satisfaction
+                      and thoughts of a singular employee about its role in its company and the company itself.<br>
+                      Our Firm means to contribute into companies and employees walfare. < .. more ..>
+                      <br>
+                      The company's name 'Zieczu' is taken from a Polish word that is 'znieczulenia',
+                      literally english translation is 'anesthesia'. The strong meaning is related to our goal, that,
+                      as still said before, it's to help companies to improve and fix some inside issues like an anesthetization, that helps to
+                      relieve the pain.
+                      <br>
                     </p>
                 </div>
                 <div class="logInUp">
@@ -70,6 +77,9 @@ export default {
         text-align: center;
         margin: 20px;
         flex-direction:column;
+    }
+    .info > .description{
+      text-align: justify;
     }
     .logInUp {
         align-items: flex-end;

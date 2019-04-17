@@ -27,9 +27,9 @@
                     <li>Telephone</li>
                 </ul>
             </div>
-            <div class="logo-pos">
-              <img src="../assets/logo-vena.png" width="120" height="120">
-            </div>
+            <!--<div class="logo-pos">-->
+              <!--<img src="../assets/logo-vena.png" width="120" height="120">-->
+            <!--</div>-->
         </div>
         <div class="maps">
             <div>

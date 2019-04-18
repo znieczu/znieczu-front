@@ -22,9 +22,9 @@
                       and services. It was born with the idea and concept to help companies to grow up and improve
                       the relationship between a Company and their employees. Searching for the real satisfaction
                       and thoughts of a singular employee about its role in its company and the company itself.<br>
-                      Our Firm means to contribute into companies and employees walfare. < .. more ..>
+                      Our Firm means to contribute into companies and employees walfare. ... more ...
                       <br>
-                      The company's name 'Zieczu' is taken from a Polish word that is 'znieczulenia',
+                      The company's name 'Znieczu' is taken from a Polish word that is 'znieczulenia',
                       literally english translation is 'anesthesia'. The strong meaning is related to our goal, that,
                       as still said before, it's to help companies to improve and fix some inside issues like an anesthetization, that helps to
                       relieve the pain.

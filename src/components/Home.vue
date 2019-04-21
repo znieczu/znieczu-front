@@ -16,8 +16,8 @@
             </div>
             <div class="info">
                 <br><br>
-                <div class="description">
-                    <p>
+                <div class="description" :class="$mq">
+                    <p >
                       <b>"Znieczu" </b> is a new Italian start-up, founded by two young guys with the passion on tech
                       and services. It was born with the idea and concept to help companies to grow up and improve
                       the relationship between a Company and their employees. Searching for the real satisfaction
@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
     .container {
         width:100%;
         height: 70vh;

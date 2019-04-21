@@ -2,10 +2,11 @@
     <div class="navbar">
         <div class="navbar-buttons">
             <router-link to="/" tag="button">Home</router-link>
-            <button>Company</button>
+            <router-link to="/about-us" tag="button">About Us</router-link>
             <img src="../assets/znieczu-logo.png" width="80" height="80">
             <button>Our Products</button>
-            <button>About Us</button>
+          <button>Contacts</button>
+
         </div>
     </div>
 </template>

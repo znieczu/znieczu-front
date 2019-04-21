@@ -44,4 +44,16 @@ export default {
         color: #fff;
         font-size: 5vh;
     }
+
+    @media screen and (max-width: 600px) {
+      .skills {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 40px 30px 8px 0 rgba(0,0,0,.2),0 3px 3px -2px rgba(0,0,0,.12);
+      }
+    }
 </style>

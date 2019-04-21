@@ -114,4 +114,52 @@ export default {
     left:50px;
     bottom:-800px;
   }
+
+    @media screen and (max-width: 600px) {
+      ul  {
+        margin: 0;
+        list-style-position: outside;
+        text-align: center;
+        margin-inline-end: unset;
+        padding-inline-start: unset;
+        line-height: 20px;
+      }
+      ul >li {
+        margin-bottom:7px;
+      }
+      footer {
+        width: 100%;
+        height: unset;
+        flex-direction: column;
+
+      }
+      footer > .links {
+        width: 100%;
+        height: unset;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+      }
+      footer > .links > #link1 {
+        margin-top: 6vh;
+      }
+      footer > .links > #link2 {
+        margin-top: 6vh;
+      }
+      footer > .links > #link3 {
+        margin-top: 6vh;
+      }
+      .maps > div {
+        display: none;
+      }
+      footer > .maps {
+        width: 100%;
+        margin-top: 50px;
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 30px;
+      }
+    }
 </style>

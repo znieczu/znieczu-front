@@ -38,8 +38,6 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
         <Skills/>
 
     </div>
@@ -88,9 +86,55 @@ export default {
     .loginButton, .signUpButton {
         background-color: rgba(0,0,0,0.7);
         color: white;
-        padding: 20px 45px 20px 45px;
+        padding: 3vh 7vh 3vh 7vh;
     }
     .signUpButton {
         background-color: #3a5180;
+    }
+
+    @media screen and (max-width: 992px) {
+      .container {
+        width:100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        width:100%;
+        margin: 0;
+        height: unset;
+
+      }
+      .carrols-image, .info {
+        width:100%;
+        margin:0;
+        height: unset;
+      }
+      .info {
+        width:100%;
+
+        background-color: white;
+        font-size: 13px;
+        text-align: center;
+      }
+      .logInUp {
+        display: flex;
+        display: none;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loginButton, .signUpButton {
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        padding: 3vh 7vh 3vh 7vh;
+      }
+      .signUpButton {
+        background-color: #3a5180;
+      }
     }
 </style>

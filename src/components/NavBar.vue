@@ -1,8 +1,9 @@
 <template>
     <div class="navbar">
       <img id="logo" src="../assets/znieczu-logo.png" width="80" height="80">
+      <v-icon  class="myIcon" @click="showButtons = !showButtons">fab fa-elementor</v-icon>
 
-      <div class="navbar-buttons">
+      <div class="navbar-buttons" v-show="showButtons">
             <router-link to="/" tag="button">Home</router-link>
             <router-link to="/about-us" tag="button">About Us</router-link>
             <img src="../assets/znieczu-logo.png" width="80" height="80">
@@ -16,13 +17,24 @@
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  data: function () {
+    return {
+      showButtons: false,
+    }
+  }
 }
 </script>
 
-<style>
+<style scoped>
   #logo {
     display: none;
+  }
+  .myIcon {
+    color: #000;
+    font-size: 5vh;
+    position: fixed;
+    right:3vh
   }
     .navbar {
         border-bottom: solid 1px #EBEAEA;
@@ -45,6 +57,10 @@ export default {
     .navbar-buttons {
         display: flex;
         justify-content: space-around;
+        position: fixed;
+        right: 2vh;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.5);
     }
 
     @media screen and (max-width: 600px) {

@@ -22,6 +22,19 @@ export default {
     return {
       showButtons: false,
     }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth <= 600) {
+        this.showButtons = false;
+      } else {
+        this.showButtons = true;
+      }
+    }
   }
 }
 </script>
@@ -30,12 +43,9 @@ export default {
   #logo {
     display: none;
   }
-  .myIcon {
-    color: #000;
-    font-size: 5vh;
-    position: fixed;
-    right:3vh
-  }
+    .myIcon{
+      display: none;
+    }
     .navbar {
         border-bottom: solid 1px #EBEAEA;
         padding: 30px;
@@ -57,13 +67,17 @@ export default {
     .navbar-buttons {
         display: flex;
         justify-content: space-around;
-        position: fixed;
-        right: 2vh;
-        z-index: 1;
-        background-color: rgba(0,0,0,0.5);
+
     }
 
     @media screen and (max-width: 600px) {
+      .myIcon {
+        display: unset;
+        background-color: rgba(0,0,0,0.1);
+        font-size: 5vh;
+        position: fixed;
+        right:3vh
+      }
       .navbar {
         border-bottom: solid 1px #EBEAEA;
         padding: unset;
@@ -72,6 +86,10 @@ export default {
       .navbar-buttons {
         display: flex;
         flex-direction: column;
+        position: fixed;
+        right: 2vh;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.5);
       }
       .navbar-buttons > img {
         display: none;

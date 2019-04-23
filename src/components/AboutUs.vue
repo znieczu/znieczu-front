@@ -44,11 +44,8 @@
       <h2>Scope</h2>
       <ul>
         <li>Scope 1</li>
-
         <li>Scope 2</li>
-
         <li>Scope 3</li>
-
       </ul>
     </div>
   </div>
@@ -103,5 +100,38 @@ export default {
     list-style-type: square;
     line-height: 5;
     margin-left: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .ourcompany {
+      width: 100%;
+      height: unset;
+      margin:unset;
+      text-align: left;
+    }
+    .ourcompany > h1 {
+      text-align: center;
+      font-size: large;
+    }
+    .ourcompany > .righttext {
+      text-align: right;
+    }
+
+    .mission {
+      width: 100%;
+      height: unset;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      box-shadow: 40px 30px 8px 0 rgba(0,0,0,.2),0 3px 3px -2px rgba(0,0,0,.12)
+    }
+    .missionicon, .missiontext {
+      width: 100%;
+      color: aliceblue;
+    }
+    .missionicon > .myIcon{
+      font-size: 80vw;
+    }
   }
 </style>

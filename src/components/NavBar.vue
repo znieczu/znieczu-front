@@ -28,7 +28,7 @@ export default {
     this.handleResize();
   },
   methods: {
-    handleResize() {
+    handleResize: function() {
       if (window.innerWidth <= 600) {
         this.showButtons = false;
       } else {
@@ -73,7 +73,9 @@ export default {
     @media screen and (max-width: 600px) {
       .myIcon {
         display: unset;
-        background-color: rgba(0,0,0,0.1);
+        filter: invert(100%);
+        mix-blend-mode: difference;
+        z-index: 1;
         font-size: 5vh;
         position: fixed;
         right:3vh

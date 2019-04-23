@@ -1,6 +1,6 @@
 <template>
   <div class="aboutus">
-    <div class="ourcompany">
+    <div id="history" class="ourcompany">
       <h1>About Our Company</h1>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

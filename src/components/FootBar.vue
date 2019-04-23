@@ -1,48 +1,63 @@
 <template>
+  <div>
     <footer>
-        <div class="links">
-            <div id="link1">
-                <h3>Company</h3>
-                <ul>
-                    <li>History</li>
-                    <li>Mission</li>
-                    <li>Scope</li>
-                </ul>
-            </div>
-            <div id="link2">
-                <h3>Our Products</h3>
-                <ul>
-                    <li>Company Walfare</li>
-                    <ul>
-                        <li>Demo</li>
-                        <li>Plans</li>
-                        <li>Booking</li>
-                    </ul>
-                </ul>
-            </div>
-            <div  id="link3">
-                <h3>Contacts</h3>
-                <ul>
-                    <li>Email</li>
-                    <li>Telephone</li>
-                </ul>
-            </div>
-            <!--<div class="logo-pos">-->
-              <!--<img src="../assets/logo-vena.png" width="120" height="120">-->
-            <!--</div>-->
+      <div class="links">
+        <div id="link1">
+          <h3>Company</h3>
+          <ul>
+            <li>
+              <router-link to="/history" tag="li">History</router-link>
+            </li>
+            <li>Mission</li>
+            <li>Scope</li>
+          </ul>
         </div>
-        <div class="maps">
-            <div>
-                <img src="../assets/earth-map3.png" height="200px">
-            </div>
-            <div class="social-icons">
-              <v-icon  class="myIcon">fab fa-facebook</v-icon>
-              <v-icon  class="myIcon">fab fa-instagram</v-icon>
-              <v-icon  class="myIcon">fab fa-twitter</v-icon>
-              <v-icon  class="myIcon">fab fa-linkedin</v-icon>
-            </div>
+        <div id="link2">
+          <h3>Our Products</h3>
+          <ul>
+            <li>Company Walfare</li>
+            <ul>
+              <li>Demo</li>
+              <li>Plans</li>
+              <li>Booking</li>
+            </ul>
+          </ul>
         </div>
+        <div  id="link3">
+          <h3>Contacts</h3>
+          <ul>
+            <li>Email</li>
+            <li>Telephone</li>
+          </ul>
+        </div>
+        <!--<div class="logo-pos">-->
+        <!--<img src="../assets/logo-vena.png" width="120" height="120">-->
+        <!--</div>-->
+      </div>
+      <div class="maps">
+        <div>
+          <img src="../assets/earth-map3.png" height="200px">
+        </div>
+        <div class="social-icons">
+          <v-icon  class="myIcon">fab fa-facebook</v-icon>
+          <v-icon  class="myIcon">fab fa-instagram</v-icon>
+          <v-icon  class="myIcon">fab fa-twitter</v-icon>
+          <v-icon  class="myIcon">fab fa-linkedin</v-icon>
+        </div>
+      </div>
     </footer>
+    <div class="terms">
+      <a>
+        Terms of Service
+      </a>
+      <a>
+        Privacy
+      </a>
+      <a>
+        Cookies © 2019 Znieczu.com
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -65,7 +80,6 @@ export default {
     }
     footer {
         width: 100%;
-        height: 50vh;
         display: flex;
     }
     footer > .links {
@@ -113,6 +127,17 @@ export default {
     position: absolute;
     left:50px;
     bottom:-800px;
+  }
+  .terms {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    align-items: center;
+  }
+  .terms > a {
+    margin-left: 10px;
   }
 
     @media screen and (max-width: 600px) {

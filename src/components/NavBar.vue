@@ -8,8 +8,7 @@
             <router-link to="/about-us" tag="button">About Us</router-link>
             <img src="../assets/znieczu-logo.png" width="80" height="80">
             <button>Our Products</button>
-          <button>Contacts</button>
-
+            <button>Contacts</button>
         </div>
 
     </div>
